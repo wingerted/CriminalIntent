@@ -13,7 +13,7 @@ public class Crime {
     private Date mDate;
     private boolean mSolved;
 
-    public  Crime() {
+    public Crime() {
         // 生成唯一标识
         mId = UUID.randomUUID();
         mDate = new Date();
