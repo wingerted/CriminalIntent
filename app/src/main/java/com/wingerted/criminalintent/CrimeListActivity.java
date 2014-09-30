@@ -1,6 +1,7 @@
 package com.wingerted.criminalintent;
 
-import android.app.Fragment;
+
+import android.support.v4.app.Fragment;
 
 /**
  * Created by wingerted on 14/9/25.

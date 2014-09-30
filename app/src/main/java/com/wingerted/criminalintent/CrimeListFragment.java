@@ -1,8 +1,8 @@
 package com.wingerted.criminalintent;
 
-import android.app.ListFragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.ListFragment;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -76,8 +76,8 @@ public class CrimeListFragment extends ListFragment {
         // Get the Crime from the adapter
         Crime c = ((CrimeAdapter) getListAdapter()).getItem(position);
         Log.d(TAG, c.getTitle() + " was clicked");
-        // Start CrimeActivity
-        Intent i = new Intent(getActivity(), CrimeActivity.class);
+        // Start CrimePagerActivity
+        Intent i = new Intent(getActivity(), CrimePagerActivity.class);
         i.putExtra(CrimeFragment.EXTRA_CRIME_ID, c.getId());
         startActivityForResult(i, REQUEST_CRIME);
     }
