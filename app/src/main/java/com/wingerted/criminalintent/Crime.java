@@ -14,7 +14,7 @@ public class Crime {
     private boolean mSolved;
 
     public Crime() {
-        // 生成唯一标识
+        // 生成唯一随机标识
         mId = UUID.randomUUID();
         mDate = new Date();
     }
